@@ -22,7 +22,11 @@ class Calculator:
 
 calc = Calculator
 
-print('Enter the number of the operation you wish to perform.\n1.Add\n2.Subtract\n3.Multiply\n4.Divide\n5.Square\n6.Inverse Square\n')
+ops = ['Addition','Subtraction','Multiplication','Division','Raise To', 'nth Root']
+
+for i in ops:
+    num = ops.index(i) + 1
+    print(str(num) + '. ' + str(i))
 
 while True:
     oper = input()
